@@ -1,0 +1,38 @@
+{
+  "name": "aeromix-v2",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beatr1xK1ddo/aeromix.V2.git"
+  },
+  "author": "H4RDCOR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Beatr1xK1ddo/aeromix.V2/issues"
+  },
+  "homepage": "https://github.com/Beatr1xK1ddo/aeromix.V2#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.16.1"
+  }
+}
