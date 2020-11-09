@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Document</title><link href="vendors~main.css" rel="stylesheet"><link href="main.css" rel="stylesheet"></head><body><header><nav class="navbar"><div class="nav-container container-fluid"><div class="nav__left"><ul class="nav__left-wrap"><li class="nav-item"><a href="">г. Химки, ул. Академика Грушина, 8</a></li><li class="nav-item"><a href="">+7-985-001-75-05</a></li></ul></div><div class="nav__logo"><a href="" class="logotype"><img src="../src/img/logo.png" alt="" width="230px"/></a></div><div class="nav__right"><ul class="nav__right-wrap"><li class="nav-item"><a href="">О клубе</a></li><li class="nav-item"><a href="">Услуги</a></li><li class="nav-item"><a href="">Цены</a></li><li class="nav-item"><a href="">Расписание</a></li><li class="nav-item"><a href="">Контакты</a></li></ul></div></div></nav></header><div class="container"><div class="link" style="margin: 30px 0"><a href="">Главная </a><span>></span> <a href="">Тренеры </a><span>></span> <a href="">Кристина Бажкова</a></div><div class="trener__wrap"><div class="trener_left"><h1>Кристина Бажкова</h1><p></p><div><strong>Направление:</strong></div>- танцевальные фитнес тренировки Zumba fitness - силовые тренеровки Strong by Zumba<p></p><p></p><div><strong>Квалификация:</strong></div>Участница Zin Jam сессий, семинаров, мастер-классов от международных презентеров. Экс-участница Ансамбля Современного Эстрадного Танца FreeStyle. Экс член сборной по волейболу и баскетболу<p></p><p></p><div><strong>Образование:</strong></div>Международный лицензированный инструктор программ Zumba Fitness<p></p><div class="trener__buttons"><a href="">Записаться </a><a href="">Узнать расписание</a></div></div><div class="trener_right"><img src="../src/img/trener/trener-6.png" alt="" style="min-width: 400px"/></div></div></div><section class="trener__section"><div class="container"><div class="other__trainer-wrap"><div class="trainer__arrow-left" id="arrowLeft"></div><div class="trainer__arrow-right" id="arrowRight"></div><div class="text__trainer-wrap"><h3>Другие тренеры</h3></div><div class="other__trainer"><div class="trainer__card-wrap" id="cardWrap"><a href="" class="trainer__card-link"><div class="trainer__card"><div class="trainer__img-2"></div><h3>Оксана Вячеславовна<br>Засыпкина</h3><p>Тренер по детской спортивной аэробике и по оздоровительной аэробике для взрослых и детей.</p></div></a><a href="" class="trainer__card-link"><div class="trainer__card"><div class="trainer__img-3"></div><h3>Жанна Вячеславовна<br>Засыпкина</h3><p>Тренер по детской спортивной аэробике и по оздоровительной аэробике для взрослых и детей.</p></div></a><a href="" class="trainer__card-link"><div class="trainer__card"><div class="trainer__img-1"></div><h3>Виктория Михайловна<br>Васильцова</h3><p>Тренер-постановщик программ по спортивной аэробике, кандидат в мастера спорта по спортивной аэробике.</p></div></a><a href="" class="trainer__card-link"><div class="trainer__card"><div class="trainer__img-4"></div><h3>Александра Левина</h3><p>Преподаватель джаз-фанка и хип-хопа</p></div></a><a href="" class="trainer__card-link"><div class="trainer__card"><div class="trainer__img-5"></div><h3>Игорь Юдин</h3><p>Тренер по йоге. Занимается йогой с 2009 года, с 2012 г. практикует и преподает йогу Айенгара.</p></div></a><a href="" class="trainer__card-link"><div class="trainer__card"><div class="trainer__img-7"></div><h3>Александра Левина</h3><p>Преподаватель джаз-фанка и хип-хопа</p></div></a></div></div></div></div></section><footer class="footer"><div class="footer__wrap"><div class="footer__logo"><div class="footer-logo-bg"><img src="../src/img/logo.png" alt=""/></div></div><div class="block__footer_mm1"><div class="footer__navbar"><ul class="nav__wrap"><li class="nav__item"><a href="">О клубе</a></li><li class="nav__item"><a href="">Тренеры</a></li><li class="nav__item"><a href="">Залы и оборудрование</a></li><li class="nav__item"><a href="">Комната отдыха</a></li><li class="nav__item"><a href="">Галерея</a></li><li class="nav__item"><a href="">Отзывы</a></li></ul><ul class="nav__wrap"><li class="nav__item"><a href="">Новости</a></li><li class="nav__item"><a href="">Сборная</a></li><li class="nav__item"><a href="">Акции</a></li></ul><ul class="nav__wrap"><li class="nav__item"><a href="">Услуги</a></li><li class="nav__item"><a href="">Цены</a></li><li class="nav__item"><a href="">Расписание</a></li><li class="nav__item"><a href="">Контакты</a></li></ul></div><div class="footer__contacts"><p class="footer__adress">г. Химки, ул. Академика Грушина, 8</p><p class="footer__phone">+7-985-001-75-05</p><div class="footer__social"><p>мы в соц. сетях</p><ul><li class="footer__social-item inst"><a href=""></a></li><li class="footer__social-item vk"><a href=""></a></li><li class="footer__social-item face"><a href=""></a></li><li class="footer__social-item odn"><a href=""></a></li></ul></div></div></div></div><p class="rights">Все права защищены. 2018-2020 г.</p></footer><script>const arrowLeft = document.getElementById('arrowLeft')
+      const arrowRight = document.getElementById('arrowRight')
+      const wrap = document.getElementById('cardWrap')
+      const trainerCards = document.querySelectorAll('.trainer__card')
+      let left = 0
+
+      function calcSlider () {
+          let maxSlidePx = 0
+          const x = trainerCards.length - 3
+          maxSlidePx = (x * 400) + (x * 75) 
+          return maxSlidePx
+      }
+
+      function moveSliderLeft() {
+          const num = calcSlider()
+          if(-left <= 0) {
+              left = -num
+              wrap.style.marginLeft = left + 'px'
+          } else {
+              left = left + 475
+              wrap.style.marginLeft = left + 'px'
+          }
+      }
+
+      function moveSliderRight() {
+          const num = calcSlider()
+          if(left > -num) {
+              left = left - 475
+              wrap.style.marginLeft = left + 'px'
+          } else {
+              left = 0
+              wrap.style.marginLeft = left + 'px'
+          }
+      }
+
+      arrowRight.addEventListener('click', moveSliderRight)
+      arrowLeft.addEventListener('click', moveSliderLeft)</script><script src="js/vendors~main.8f59b6fa5131b21c42e6.js"></script><script src="js/main.fdb749860e9c5041147e.js"></script></body></html>
